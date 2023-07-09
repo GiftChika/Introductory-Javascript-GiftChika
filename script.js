@@ -1,27 +1,27 @@
 //Test 1
-const language = prompt('what do you want to know about these languages? chinese, spanish, english, hindi, arabic ');
-switch(language){
-    case 'chinese': 
-        console.log('MOST number of native speakers!');
-        break;
-    case 'mandarin': 
-        console.log('MOST number of native speakers!');
-        break;
-    case 'spanish':
-        console.log('2nd place in number of native speakers');
-        break;
-    case 'english':
-        console.log('3rd place');
-        break;
-    case 'hindi':
-        console.log('Number 4');
-        break;
-    case 'arabic':
-        console.log('5th most spoken language');
-        break;
-    default:
-        console.log('Great language too');
-}
+// const language = prompt('what do you want to know about these languages? chinese, spanish, english, hindi, arabic ');
+// switch(language){
+//     case 'chinese': 
+//         console.log('MOST number of native speakers!');
+//         break;
+//     case 'mandarin': 
+//         console.log('MOST number of native speakers!');
+//         break;
+//     case 'spanish':
+//         console.log('2nd place in number of native speakers');
+//         break;
+//     case 'english':
+//         console.log('3rd place');
+//         break;
+//     case 'hindi':
+//         console.log('Number 4');
+//         break;
+//     case 'arabic':
+//         console.log('5th most spoken language');
+//         break;
+//     default:
+//         console.log('Great language too');
+// }
 
 //Test 2 Dolphins and Koalas
 
@@ -97,6 +97,20 @@ if(averageScoreDolphins_dataBonus2 >= 100 && averageScoreDolphins_dataBonus2 > a
     console.log('Its a draw game ,thus there is no winner');
 }
 
+
+//Test 3
+const bill_Value = prompt('Want to know ur meal tip for the day? input bill value, for example 275,40,430')
+let tip;
+const bill = parseFloat(bill_Value);
+if (bill >= 50 && bill <= 300){
+    tip = 0.15 * bill;
+}else{
+    tip = 0.2 * bill;
+}
+const total_Bill = bill + tip;
+console.log(`This bill was ${bill}, the tip was ${tip} , and the total bill ${total_Bill}`);
+
+
 // Test 4
 function describeCountry(country,population,capitalCity){
     const countryInfo = `${country} has ${population} people and its capital city is ${capitalCity}`;
@@ -143,14 +157,14 @@ const percentage_Info4 = percentageWorld2('Botswana','1000');
 console.log(percentage_Info4);
 
 //For percentageworld3
-const percentageWorld3 = (country,population )=>  population / 7900 *100;
+const percentageWorld3 = (country, population)=>  (population / 7900) *100;
 
 const percentageInfo5 = function(country,population){
     const percentage = percentageWorld3(population);
     const  percentageInfo6 =`${country} is about ${percentage} of the world population`;
     return percentageInfo6;
 }
-const percentage_Info7 = percentageInfo5('China', '1441');
+const percentage_Info7 = percentageInfo5('China', 1441);
 console.log(percentage_Info7);
 
 //Test 6
