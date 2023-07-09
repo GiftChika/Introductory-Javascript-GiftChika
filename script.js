@@ -1,27 +1,27 @@
 //Test 1
-// const language = prompt('what do you want to know about these languages? chinese, spanish, english, hindi, arabic ');
-// switch(language){
-//     case 'chinese': 
-//         console.log('MOST number of native speakers!');
-//         break;
-//     case 'mandarin': 
-//         console.log('MOST number of native speakers!');
-//         break;
-//     case 'spanish':
-//         console.log('2nd place in number of native speakers');
-//         break;
-//     case 'english':
-//         console.log('3rd place');
-//         break;
-//     case 'hindi':
-//         console.log('Number 4');
-//         break;
-//     case 'arabic':
-//         console.log('5th most spoken language');
-//         break;
-//     default:
-//         console.log('Great language too');
-// }
+const language = prompt('what do you want to know about these languages? chinese, spanish, english, hindi, arabic ');
+switch(language){
+    case 'chinese': 
+        console.log('MOST number of native speakers!');
+        break;
+    case 'mandarin': 
+        console.log('MOST number of native speakers!');
+        break;
+    case 'spanish':
+        console.log('2nd place in number of native speakers');
+        break;
+    case 'english':
+        console.log('3rd place');
+        break;
+    case 'hindi':
+        console.log('Number 4');
+        break;
+    case 'arabic':
+        console.log('5th most spoken language');
+        break;
+    default:
+        console.log('Great language too');
+}
 
 //Test 2 Dolphins and Koalas
 
@@ -108,8 +108,7 @@ if (bill >= 50 && bill <= 300){
     tip = 0.2 * bill;
 }
 const total_Bill = bill + tip;
-console.log(`This bill was ${bill}, the tip was ${tip} , and the total bill ${total_Bill}`);
-
+console.log(`Your bill is ${bill}, the tip is ${tip} , and the total bill ${total_Bill}`);
 
 // Test 4
 function describeCountry(country,population,capitalCity){
