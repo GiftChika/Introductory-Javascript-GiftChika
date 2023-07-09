@@ -1,4 +1,5 @@
 //Test 1
+'use strict'
 const language = prompt('what do you want to know about these languages? chinese, spanish, english, hindi, arabic ');
 switch(language){
     case 'chinese': 
@@ -131,13 +132,13 @@ function percentageWorld1(countryName,population){
     const  percentageInfo =`${countryName} is about ${percentage} of the world population`;
     return percentageInfo;
 }
-const percentageInfo1 = percentageWorld1('China','1441');
+const percentageInfo1 = percentageWorld1('China',1441);
 console.log(percentageInfo1);
-const percentageInfo2 = percentageWorld1('Finland','1200');
+const percentageInfo2 = percentageWorld1('Finland',1200);
 console.log(percentageInfo2);
-const percentageInfo3 = percentageWorld1('Namibia','1400');
+const percentageInfo3 = percentageWorld1('Namibia',1400);
 console.log(percentageInfo3);
-const percentageInfo4 = percentageWorld1('Botswana','1000');
+const percentageInfo4 = percentageWorld1('Botswana',1000);
 console.log(percentageInfo4);
 
 //For percentageworld2
@@ -146,25 +147,26 @@ function percentageWorld2(countryName,population){
     const  percentageInfo =`${countryName} is about ${percentage} of the world population`;
     return percentageInfo;
 }
-const percentage_Info1 = percentageWorld2('China','1441');
+const percentage_Info1 = percentageWorld2('China',1441);
 console.log(percentage_Info1);
-const percentage_Info2 = percentageWorld2('Finland','1200');
+const percentage_Info2 = percentageWorld2('Finland',1200);
 console.log(percentage_Info2);
-const percentage_Info3 = percentageWorld2('Namibia','1400');
+const percentage_Info3 = percentageWorld2('Namibia',1400);
 console.log(percentage_Info3);
-const percentage_Info4 = percentageWorld2('Botswana','1000');
+const percentage_Info4 = percentageWorld2('Botswana',1000);
 console.log(percentage_Info4);
 
 //For percentageworld3
 const percentageWorld3 = (country, population)=>  (population / 7900) *100;
 
 const percentageInfo5 = function(country,population){
-    const percentage = percentageWorld3(population);
-    const  percentageInfo6 =`${country} is about ${percentage} of the world population`;
-    return percentageInfo6;
+    const percentage = population / 7900 *100;
+    const  percentageInfo =`${country} is about ${percentage} of the world population`;
+    return percentageInfo;
 }
-const percentage_Info7 = percentageInfo5('China', 1441);
+const percentage_Info7 = percentageWorld3('China', 1441);
 console.log(percentage_Info7);
+
 
 //Test 6
 const china = 1441;
