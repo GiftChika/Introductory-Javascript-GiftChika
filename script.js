@@ -176,19 +176,26 @@ const botswana = 1000;
 
 const population = [china, finland, namibia, botswana];
 console.log(population);
-if (population.length === 4){
-    console.log('true')
-}else{
-    console.log('false')
-}
+console.log(population.length);
 
 //array percentages
 const percentages = [18.2,15.1,17.7,12.7];
 
-// function percentageWorld1(countryName,population){
-//     const percentage = population / 7900 *100;
-//     const  percentageInfo =`${countryName} is about ${percentage} of the world population`;
-//     return percentageInfo;
-// }
- 
+function percentageOfWorld1(population){
+    const worldpopulation = 7900;
+    const percentage = (population / worldpopulation) *100;
+    return percentage;
+}
 
+const china_population = 1441;
+const china_percentage = percentageOfWorld1(china_population);
+console.log(china_percentage);
+const finland_population = 1200;
+const finland_percentage = percentageOfWorld1(finland_population);
+console.log(finland_percentage);
+const namibia_population = 1400;
+const namibia_percentage = percentageOfWorld1(namibia_population);
+console.log(namibia_percentage);
+const botswana_population = 1000;
+const botswana_percentage = percentageOfWorld1(botswana_population);
+console.log(botswana_percentage);
